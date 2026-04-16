@@ -4,9 +4,9 @@ import { cn } from "@/app/lib/utils"
 export default function ButtonChat() {
     return (
         <>
-            <button className="relative rounded-lg p-0.5 pl-8 group border tracking-tight border-white/20 flex items-center gap-2 cursor-pointer">
+            <button className="relative rounded-lg p-0.5 pl-8 group border tracking-tight border-white/20 flex items-center gap-2 cursor-pointer hover:bg-white/10 transition-colors duration-300 ease-out">
                 <Box />
-                <span className="inline-block group-hover:-translate-x-8 ease-out transition-transform duration-400 p-0.5">
+                <span className="inline-block group-hover:-translate-x-8 ease-out transition-transform duration-400 p-0.5 ">
 
                     Chat with Abhi
                 </span>
@@ -18,8 +18,8 @@ export default function ButtonChat() {
 
 const Box = () => {
     return (
-        <div className="absolute left-0.5 flex flex-col justify-center items-center gap-px size-6 rounded-sm bg-amber-400 
-        group-hover:left-[calc(100%-1.5rem-2px)] group-hover:transform group-hover:rotate-180 ease-out transition-all duration-400">
+        <div className="absolute left-0.5 flex flex-col justify-center items-center gap-px size-[1.8rem] rounded-sm bg-amber-400 
+        group-hover:left-[calc(100%-1.8rem-2px)] group-hover:transform group-hover:rotate-180 ease-out transition-all duration-400">
           <div className="flex gap-px items-center">
             <Bubble />
             <Bubble />
